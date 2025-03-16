@@ -11,7 +11,7 @@ public class MyOrderedArray {
 
     public void put(int el) {
         int i;
-        for ( i = 0; i < size; i++) {
+        for (i = 0; i < size; i++) {
             if (array[i] > el) break;
         }
         for (int j = size; j > i; j--) {
@@ -21,12 +21,12 @@ public class MyOrderedArray {
         size++;
     }
 
-    public int getSize(){
+    public int getSize() {
         return size;
     }
 
-    public void display(){
-        for(int i: array){
+    public void display() {
+        for (int i : array) {
             System.out.print(i + " ");
         }
         System.out.println("");
